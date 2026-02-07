@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AIGenFurniture - Automated Furniture Design</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="logo">AIGenFurniture</p>
+      <a class="header-link" href="#signup">Get the MVP</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <h1>From idea to production-ready furniture in minutes.</h1>
+          <p class="lead">
+            AIGenFurniture turns FreeCAD input into automated furniture layouts,
+            parts lists, and shop-ready outputs you can build with confidence.
+          </p>
+          <a class="primary-button" href="#signup">Get the MVP</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What it does</h2>
+        <p class="section-intro">
+          Bring your FreeCAD concepts, generate production outputs, and move
+          straight to building.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>FreeCAD in</h3>
+            <p>Import or sketch your furniture concept with familiar CAD tools.</p>
+          </div>
+          <div class="card">
+            <h3>Automated generation</h3>
+            <p>Get optimized layouts, joinery options, and part breakdowns.</p>
+          </div>
+          <div class="card">
+            <h3>Production-ready out</h3>
+            <p>Export cut lists and shop drawings ready for your workflow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>Who is this for?</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Professional shops</h3>
+            <p>Speed up quoting and prototyping for custom furniture builds.</p>
+          </div>
+          <div class="card">
+            <h3>Hobbyist woodworkers</h3>
+            <p>Build smarter with ready-to-cut plans and clear joinery guidance.</p>
+          </div>
+          <div class="card">
+            <h3>Curious makers</h3>
+            <p>Explore automated design workflows without heavy setup.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="signup" class="section">
+      <div class="container">
+        <h2>Get early access</h2>
+        <p class="section-intro">
+          Tell us a bit about you and we will send you to the latest MVP release.
+        </p>
+        <form id="signup-form" class="form">
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@shop.com" required />
+          </div>
+
+          <div class="form-field">
+            <label for="referral">How did you hear about AIGenFurniture?</label>
+            <select id="referral" name="referral">
+              <option value="" selected>Choose one</option>
+              <option value="github">GitHub</option>
+              <option value="community">Community forum</option>
+              <option value="friend">Friend or colleague</option>
+              <option value="search">Search</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="role">You are a...</label>
+            <select id="role" name="role">
+              <option value="" selected>Choose one</option>
+              <option value="professional">Professional shop</option>
+              <option value="hobbyist">Hobbyist</option>
+              <option value="designer">Designer / engineer</option>
+              <option value="curious">Just curious</option>
+            </select>
+          </div>
+
+          <button class="primary-button" type="submit">Get the MVP</button>
+          <p class="form-note">We only use this to understand who is trying the MVP.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Open-source, community-driven, and built for makers.</p>
+    </div>
+  </footer>
+
+  <script src="js/form.js"></script>
+</body>
+</html>
