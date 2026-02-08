@@ -1,13 +1,14 @@
 /* Base styles */
 :root {
   color-scheme: light;
-  --bg: #f6f4f0;
-  --text: #1e1b16;
-  --muted: #5c554d;
-  --accent: #b8673b;
-  --accent-dark: #8f4d2d;
+  --bg: #f6f8f7;
+  --text: #2b2e2e;
+  --muted: #55605d;
+  --accent: #2f5d50;
+  --accent-dark: #24463d;
+  --accent-soft: #8fb7a3;
   --card: #ffffff;
-  --border: #ded8cf;
+  --border: #d7e1dc;
 }
 
 * {
@@ -25,6 +26,7 @@ body {
 h1, h2, h3 {
   margin: 0 0 0.5rem;
   line-height: 1.2;
+  color: var(--accent);
 }
 
 p {
@@ -46,8 +48,16 @@ a {
   padding: 4rem 0;
 }
 
+.section + .section {
+  border-top: 1px solid var(--border);
+}
+
 .section.alt {
-  background: #efeae3;
+  background: #eef3f1;
+}
+
+.section-accent {
+  background: linear-gradient(90deg, rgba(143, 183, 163, 0.15), rgba(143, 183, 163, 0));
 }
 
 .section-intro {
@@ -83,8 +93,17 @@ a {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.03em;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .header-link {
@@ -111,6 +130,12 @@ a {
   color: var(--muted);
 }
 
+.platform-note {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
 /* Buttons */
 .primary-button {
   display: inline-block;
@@ -125,6 +150,13 @@ a {
 
 .primary-button:hover {
   background: var(--accent-dark);
+}
+
+.text-link {
+  display: inline-flex;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: var(--accent);
 }
 
 /* Form */
