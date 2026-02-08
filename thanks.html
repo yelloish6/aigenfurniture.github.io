@@ -6,6 +6,11 @@
   <title>Thanks for trying AIGenFurniture</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+<script>
+  if (window.top !== window.self) {
+    window.top.location = window.location.href;
+  }
+</script>
 <body>
   <header class="site-header">
     <div class="container">
@@ -23,7 +28,13 @@
             Your details help us shape the MVP. The latest release is ready
             for download below.
           </p>
-          <a class="primary-button" href="https://github.com/yelloish6/AIGenFurniture-freecad-workbench/releases/tag/aigenfurniture">Download the MVP</a>
+          <a
+                  class="primary-button"
+                  href="https://github.com/yelloish6/AIGenFurniture-freecad-workbench/releases/tag/aigenfurniture"
+                  target="_blank"
+                  rel="noopener noreferrer"
+          >
+            Download the MVP</a>
           <p class="section-intro">We will keep improving based on community feedback.</p>
         </div>
       </div>
