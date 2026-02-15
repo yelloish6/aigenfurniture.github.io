@@ -166,6 +166,12 @@ a {
   gap: 1rem;
 }
 
+.video-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
 .youtube-embed {
   width: 100%;
   aspect-ratio: 16 / 9;
