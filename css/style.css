@@ -159,6 +159,21 @@ a {
   color: var(--accent);
 }
 
+/* Tutorials */
+.video-panel {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.youtube-embed {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #000;
+}
+
 /* Form */
 .form {
   margin-top: 2rem;
